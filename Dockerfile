@@ -5,5 +5,4 @@ RUN yum install -y httpd \
 ADD index.html > /var/www/html
 WORKDIR /var/www/html
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
-EXPOSE 80
-
+EXPOSE 80 22
